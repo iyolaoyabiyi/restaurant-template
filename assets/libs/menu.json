@@ -1,0 +1,137 @@
+{
+  "menu": [
+    {
+      "name": "Jollof Rice",
+      "price": 1500,
+      "category": "Continental",
+      "description": "Spicy one-pot dish made with rice, tomatoes, and peppers",
+      "image": "jollof-rice.jpg"
+    },
+    {
+      "name": "Fried Rice",
+      "price": 1200,
+      "category": "Continental",
+      "description": "Chinese-inspired fried rice dish with vegetables and spices",
+      "image": "fried-rice.jpg"
+    },
+    {
+      "name": "Coconut Rice",
+      "price": 1800,
+      "category": "Continental",
+      "description": "Flavorful rice dish cooked with coconut milk and spices",
+      "image": "coconut-rice.jpg"
+    },
+    {
+      "name": "Eba",
+      "price": 800,
+      "category": "Swallows",
+      "description": "Thick paste made from cassava flour, served with soups",
+      "image": "eba.jpg"
+    },
+    {
+      "name": "Pounded Yam",
+      "price": 1000,
+      "category": "Swallows",
+      "description": "Traditional dish made from boiled and pounded yams",
+      "image": "pounded-yam.jpg"
+    },
+    {
+      "name": "Semo",
+      "price": 900,
+      "category": "Swallows",
+      "description": "Thick cornmeal paste, often served with soups",
+      "image": "semo.jpg"
+    },
+    {
+      "name": "Amala",
+      "price": 1000,
+      "category": "Swallows",
+      "description": "Thick paste made from yam or cassava flour, served with soups",
+      "image": "amala.jpg"
+    },
+    {
+      "name": "Egusi Soup",
+      "price": 1200,
+      "category": "Soups",
+      "description": "Hearty soup made with ground melon seeds and vegetables",
+      "image": "egusi-soup.jpg"
+    },
+    {
+      "name": "Ogbono Soup",
+      "price": 1500,
+      "category": "Soups",
+      "description": "Rich and flavorful soup made with ground ogbono seeds",
+      "image": "ogbono-soup.jpg"
+    },
+    {
+      "name": "Okra Soup",
+      "price": 1000,
+      "category": "Soups",
+      "description": "Delicious soup made with okra and vegetables",
+      "image": "okra-soup.jpg"
+    },
+    {
+      "name": "Akara",
+      "price": 1000,
+      "category": "Breakfast",
+      "description": "Fried bean cakes, often served with pap or garri",
+      "image": "akara.jpg"
+    },
+    {
+      "name": "Moimoi",
+      "price": 800,
+      "category": "Breakfast",
+      "description": "Steamed bean pudding, wrapped in leaves",
+      "image": "moimoi.jpg"
+    },
+    {
+      "name": "Puff-Puff",
+      "price": 500,
+      "category": "Breakfast",
+      "description": "Deep-fried dough balls, sprinkled with sugar",
+      "image": "puff-puff.jpg"
+    },
+    {
+      "name": "Suya",
+      "price": 1200,
+      "category": "Grills",
+      "description": "Thinly sliced pieces of meat, marinated and grilled",
+      "image": "suya.jpg"
+    },
+    {
+      "name": "Grilled Chicken",
+      "price": 1800,
+      "category": "Grills",
+      "description": "Marinated chicken, grilled to perfection",
+      "image": "grilled-chicken.jpg"
+    },
+    {
+      "name": "Grilled Fish",
+      "price": 2000,
+      "category": "Grills",
+      "description": "Fresh fish, marinated and grilled to perfection",
+      "image": "grilled-fish.jpg"
+    },
+    {
+      "name": "Fried Plantains",
+      "price": 600,
+      "category": "Sides",
+      "description": "Thinly sliced plantains, fried until crispy",
+      "image": "fried-plantains.jpg"
+    },
+    {
+      "name": "Vegetable Salad",
+      "price": 800,
+      "category": "Sides",
+      "description": "Fresh mix of vegetables, served",
+      "image": "vegetable-salad.jpg"
+    },
+    {
+      "name": "Fried Yam",
+      "price": 800,
+      "category": "Sides",
+      "description": "Thinly sliced yams, fried until crispy",
+      "image": "fried-yam.jpg"
+    }
+  ]
+}

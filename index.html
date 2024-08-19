@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Website :: We Sell Food Here</title>
+
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body data-bs-theme="">
+  <p class="text-bg-primary text-capitalize text-center py-2 m-0">##, On this street, In this town, in this country.</p>
+  <header id="mainHeader" class="sticky-top bg-light p-2 p-sm-0">
+    <nav class="container-xl navbar navbar-expand-lg justify-content-center justify-content-sm-between align-items-center px-sm-3 gap-4 p-0">
+      <div class="navbar-brand d-flex flex-column flex-sm-row align-items-center me-auto text-center text-sm-end gap-sm-2">
+        <img src="assets/img/logo.svg" alt="Logo" style="width: 70px">
+        <h1 class="m-0 h2">Restaurant</h1>
+      </div>
+      <button class="navbar-toggler btn text-bg-primary px-4 py-2" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        Menu
+      </button>
+      <div id="mainNav" class="navbar-nav justify-content-lg-end collapse navbar-collapse">
+        <button class="dropdown nav-item btn text-center p-0">
+          <a class="dropdown-toggle btn btn-lg text-uppercase fw-bolder border-0" data-bs-toggle="dropdown">About us</a>
+          <nav class="iyo-dropdown-menu dropdown-menu row bg-primary justify-content-center p-0">
+            <a class="btn btn-md text-uppercase fw-bolder fs-5 px-2 rounded-0 rounded-top">Our Story</a>
+            <a class="btn btn-md text-uppercase fw-bolder fs-5 px-2 rounded-0">Our Chefs</a>
+            <a class="btn btn-md text-uppercase fw-bolder fs-5 px-2 rounded-0">FAQs</a>
+          </nav>
+        </button>
+        <a class="nav-item btn btn-lg text-uppercase fw-bolder" href="#services">Our Services</a>
+        <a class="nav-item btn btn-lg text-uppercase fw-bolder" href="#menu">Our Menu</a>
+        <a class="nav-item btn btn-lg text-uppercase fw-bolder" href="#contact">Contact Us</a>
+        <button class="btn btn-primary px-xl-5 fs-5 fw-bold text-uppercase ms-2 my-4">Book Table</button>
+      </div>
+    </nav>
+  </header>
+  <main class="">
+    <section id="hero" class="carousel slide carousel-dark d-flex flex-column align-items-center py-5" data-bs-ride="carousel">
+      <button class="carousel-control-prev justify-content-start ps-sm-5" data-bs-target="#hero" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <div class="carousel-inner container text-center py-5 px-3 rounded">
+        <div class="carousel-item active">
+          <h2 class="display-1">Welcome to our restaurant</h2>
+          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, tempora?</p>
+          <a href="" class="btn btn-primary btn-lg mt-4 text-uppercase">Check Out Our Menu</a>
+        </div>
+        <div class="carousel-item">
+          <h2 class="display-1">We serve the best dishes</h2>
+          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, tempora?</p>
+          <a href="" class="btn btn-primary btn-lg mt-4 text-uppercase">Reserve a Table</a>
+        </div>
+        <div class="carousel-item">
+          <h2 class="display-1">Delicacies On Your doorstep</h2>
+          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, tempora?</p>
+          <a href="" class="btn btn-primary btn-lg mt-4 text-uppercase">Order Online</a>
+        </div>
+      </div>
+      <div class="carousel-indicators iyo-carousel-indicators m-0 px-4 py-2 rounded-bottom">
+        <button class="active btn" data-bs-target="#hero" data-bs-slide-to="0"></button>
+        <button class="btn" data-bs-target="#hero" data-bs-slide-to="1"></button>
+        <button class="btn" data-bs-target="#hero" data-bs-slide-to="2"></button>
+      </div>
+      <button class="carousel-control-next justify-content-end pe-sm-5" data-bs-target="#hero" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </section>
+    <section class="py-5">
+      <article class="text-center fs-5">
+        <div class="text-center d-flex flex-column gap-3">
+          <h2 class="fs-5 fw-bold text-uppercase px-3 m-auto border-bottom border-3 border-primary">About Us</h2>
+          <p class="h2 m-0 text-capitalize">Indulge in Traditional Flavors with a Modern Twist.</p>
+        </div>
+        <div class="container my-4">
+          <p>At <span class="d-inline-block text-bg-primary px-3 text-uppercase rounded">Restaurant</span>, we bring the vibrant and diverse flavors of Nigeria right to your plate. Founded in 2022, our journey began with a passion for showcasing the culinary traditions of Nigeria in an environment that blends tradition with modernity. </p>
+          <p> From the bustling streets of Lagos to the serene villages of the North, our menu is a celebration of the country's rich cultural heritage.</p>
+        </div>
+        <div class="container-fluid row text-md-start text-sm-center align-items-center mt-5 gap-5 p-1 px-sm-4">
+          <div class="col-md">
+            <h2 class="text-uppercase">we offer a dining experience that feels like home!</h2>   
+            <p>Our commitment is to provide authentic Nigerian dishes made from the freshest ingredients, carefully sourced from local markets and farms. Whether you're craving a hearty bowl of jollof rice or the savory taste of suya, we offer a dining experience that feels like home. Come and experience the warmth of Nigerian hospitality and the joy of sharing a meal with loved ones.</p>
+            <a class="btn btn-primary btn-lg text-uppercase mt-4" href="#menu">Explore Our Menu</a>
+          </div>
+          <div class="col-md">
+          <img src="./assets/img/hero-bg.jpg" alt="Our Restaurant" class="img-fluid img-thumbnail d-block m-auto"></div>
+        </div>
+      </article>
+    </section>
+    <section id="menu"class="text-bg-primary py-5 mt-5 d-flex flex-column">
+      <h2 class="fs-5 fw-bold text-uppercase text-center px-3 mx-auto my-5 border-bottom border-3 border-dark">Our Menu</h2>
+      <div class="nav nav-tabs nav-fill justify-content-center text-uppercase px-2">
+        <a class="nav-item nav-link active" href="#allMenu" data-bs-toggle="tab">All</a>
+        <a class="nav-item nav-link" href="#continental" data-bs-toggle="tab">Continental</a>
+        <a class="nav-item nav-link" href="#swallows" data-bs-toggle="tab">Swallows</a>
+        <a class="nav-item nav-link" href="#soups" data-bs-toggle="tab">Soups</a>
+        <a class="nav-item nav-link" href="#grills" data-bs-toggle="tab">Grills</a>
+        <a class="nav-item nav-link" href="#sides" data-bs-toggle="tab">Sides</a>
+        <a class="nav-item nav-link" href="#breakfast" data-bs-toggle="tab">Breakfast</a>
+      </div>
+      <div class="tab-content container py-5">
+        <div id="allMenu" class="tab-pane fade show active">
+          <h2 class="text-uppercase text-center fs-1 mb-5">All Dishes</h2>
+          <div class="row"></div>
+        </div>
+        <!-- Continental -->
+        <div id="continental" class="tab-pane fade">
+          <h3 class="text-uppercase text-center fs-1 mb-5">Continental Dishes</h3>
+          <div class="row"></div>
+        </div>
+        <!-- Swallows -->
+        <div id="swallows" class="tab-pane fade">
+          <h3 class="text-uppercase text-center fs-1 mb-5">Swallow/Native Dishes</h3>
+          <div class="row"></div>
+        </div>
+        <!-- Soups -->
+        <div id="soups" class="tab-pane fade">
+          <h3 class="text-uppercase text-center fs-1 mb-5">Soups</h3>
+          <div class="row"></div>
+        </div>
+        <!-- Grills -->
+        <div id="grills" class="tab-pane fade">
+          <h3 class="text-uppercase text-center fs-1 mb-5">Grills</h3>
+          <div class="row"></div>
+        </div>
+        <!-- Sides -->
+        <div id="sides" class="tab-pane fade">
+          <h3 class="text-uppercase text-center fs-1 mb-5">Sides</h3>
+          <div class="row"></div>
+        </div>
+        <!-- Breakfast -->
+        <div id="breakfast" class="tab-pane fade">
+          <h3 class="text-uppercase text-center fs-1 mb-5">Breakfast</h3>
+          <div class="row"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
