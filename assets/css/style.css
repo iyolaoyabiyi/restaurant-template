@@ -21,6 +21,9 @@
   --bs-btn-disabled-bg: var(--bs-primary);
   --bs-btn-disabled-border-color: var(--bs-primary);
 }
+.bg-primary-transparent {
+  background: rgba(var(--bs-light-rgb), 65%);
+}
 a {
   color: var(--bs-primary);
 }
@@ -67,6 +70,22 @@ a:hover {
 }
 #menu a.nav-link.active {
   color: var(--bs-dark);
+}
+.services-container {
+  background: url('../img/hero-bg.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.service > div:hover {
+  box-shadow: 0 0 5px var(--bs-dark);
+}
+.service:hover img {
+  background: #fff;
+  border: none !important;
+  border-radius: 0 !important;
+}
+.service img {
+  max-width: 70px;
 }
 @media screen and (max-width: 576px) {
   .carousel-inner.rounded {
