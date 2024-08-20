@@ -87,6 +87,22 @@ a:hover {
 .service img {
   max-width: 70px;
 }
+.accordion-button {
+  background: var(--bs-light) !important;
+  color: var(--bs-primary) !important;
+}
+.accordion-button::after {
+  display: inline-block;
+  background-color: var(--bs-light);
+  border-radius: 50%;
+}
+.accordion-button[aria-expanded=true] {
+  background: var(--bs-primary) !important;
+  color: var(--bs-light) !important;
+}
+.accordion-button:focus {
+  box-shadow: 0 0 5px var(--bs-dark) !important;
+}
 @media screen and (max-width: 576px) {
   .carousel-inner.rounded {
     border-radius: 0 !important;

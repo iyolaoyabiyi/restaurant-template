@@ -6,14 +6,16 @@ const soupsContainer = document.querySelector('#soups > div.row');
 const grillsContainer = document.querySelector('#grills > div.row');
 const sidesContainer = document.querySelector('#sides > div.row');
 const breakfastContainer = document.querySelector('#breakfast > div.row');
+const faqsContainer = document.querySelector('#faqsContainer');
 let menu = {};
+let faqs = {};
 const imgDir = './assets/img/';
 
 
-async function fetchMenu() {
-  const result = await fetch('./assets/libs/menu.json');
+async function fetchContent() {
+  const result = await fetch('./assets/libs/content.json');
   const data = await result.json();
-  return data.menu;
+  return data;
 }
 function htmlMenuCard(item) {
   const id = item.name.trim().split(' ').join('').toLowerCase();
@@ -34,11 +36,21 @@ function htmlMenuCard(item) {
     </div>
   `;
 }
+function faqHtml(item) {
+  const id = `${item.question.split(/[\s'?.,\\/]/).join("").slice(0)}`;
+  return `
+    <article class="accordion-item">
+      <button data-bs-toggle="collapse" class="accordion-header accordion-button fs-4 text-uppercase" data-bs-target="#${id}">${item.question}</button>
+      <p id=${id} class="accordion-collapse collapse p-3 m-0 lead" data-bs-parent="#faqs">${item.answer}</p>
+    </article>
+  `
+}
 
-fetchMenu()
+fetchContent()
   .then(data => {
-    menu = data;
-    if (!menu) {
+    menu = data.menu;
+    faqs = data.faqs;
+    if (!data) {
       throw new Error('Invalid data')
     }
   })
@@ -67,6 +79,9 @@ fetchMenu()
         default:
           break;
       }
+    });
+    faqs.forEach(item => {
+      faqsContainer.innerHTML += faqHtml(item);
     });
   })
   .catch((err) => {

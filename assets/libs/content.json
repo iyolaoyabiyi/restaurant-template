@@ -133,5 +133,47 @@
       "description": "Thinly sliced yams, fried until crispy",
       "image": "fried-yam.jpg"
     }
+  ],
+  "faqs": [
+    {
+      "question": "What type of cuisine do you serve?",
+      "answer": "We serve authentic Nigerian cuisine, including traditional dishes like Jollof Rice, Egusi Soup, and Suya."
+    },
+    {
+      "question": "Do you offer vegetarian options?",
+      "answer": "Yes, we have a variety of vegetarian options, such as Vegetable Stew and Fried Plantains."
+    },
+    {
+      "question": "Can I place an order for delivery?",
+      "answer": "Yes, we offer delivery services. Simply call us or place an order through our website."
+    },
+    {
+      "question": "Do you have a kids' menu?",
+      "answer": "Yes, our kids' menu includes smaller portions of our popular dishes, like Chicken and Rice."
+    },
+    {
+      "question": "Can I book a table for a large group?",
+      "answer": "Yes, we can accommodate large groups. Please call us in advance to make a reservation."
+    },
+    {
+      "question": "Do you offer catering services?",
+      "answer": "Yes, we provide catering services for events and parties. Contact us for more information."
+    },
+    {
+      "question": "Are your ingredients halal?",
+      "answer": "Yes, all our meat and poultry are halal-certified."
+    },
+    {
+      "question": "Can I cancel or change my order?",
+      "answer": "Please contact us at least 30 minutes before pickup or delivery to cancel or make changes to your order."
+    },
+    {
+      "question": "Do you accept credit cards?",
+      "answer": "Yes, we accept major credit cards, including Visa, Mastercard, and Amex."
+    },
+    {
+      "question": "Do you have a loyalty program?",
+      "answer": "Yes, join our loyalty program to earn points and rewards with every purchase."
+    }
   ]
 }
