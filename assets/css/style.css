@@ -25,6 +25,25 @@
 .bg-primary-transparent {
   background: rgba(var(--bs-light-rgb), 65%);
 }
+.btn-fb, .btn-twitter, .btn-instagram, .btn-tiktok {
+  color: #fff; 
+}
+.btn-fb:hover, .btn-twitter:hover, .btn-instagram:hover, .btn-tiktok:hover {
+  background: var(--bs-dark);
+  color: #fff; 
+}
+.btn-fb {
+  background: #4267B2;
+}
+.btn-twitter {
+  background: #1DA1F2;
+}
+.btn-instagram {
+  background: #8E24AA;
+}
+.btn-tiktok {
+  background: #FF69B4;
+}
 a {
   color: var(--bs-primary);
 }
@@ -93,6 +112,10 @@ a {
 }
 .service img {
   max-width: 70px;
+}
+#chef {
+  background: url('../img/chef-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 .accordion-button {
   background: var(--bs-light) !important;
