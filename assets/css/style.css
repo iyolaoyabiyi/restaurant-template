@@ -25,18 +25,18 @@
 .bg-primary-transparent {
   background: rgba(var(--bs-light-rgb), 65%);
 }
-.btn-fb, .btn-twitter, .btn-instagram, .btn-tiktok {
+.btn-fb, .btn-x, .btn-instagram, .btn-tiktok {
   color: #fff; 
 }
-.btn-fb:hover, .btn-twitter:hover, .btn-instagram:hover, .btn-tiktok:hover {
+.btn-fb:hover, .btn-x:hover, .btn-instagram:hover, .btn-tiktok:hover {
   background: var(--bs-dark);
   color: #fff; 
 }
 .btn-fb {
   background: #4267B2;
 }
-.btn-twitter {
-  background: #1DA1F2;
+.btn-x {
+  background: #000000;
 }
 .btn-instagram {
   background: #8E24AA;
