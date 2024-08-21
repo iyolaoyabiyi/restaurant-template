@@ -10,31 +10,31 @@
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/script.js" defer></script>
 </head>
-<body data-bs-theme="">
+<body data-bs-theme="" data-bs-spy="scroll" data-bs-target="#mainNav" tabindex="0" data-bs-smooth-scroll=true>
   <p class="text-bg-primary text-capitalize text-center py-2 m-0">##, On this street, In this town, in this country.</p>
-  <header id="mainHeader" class="sticky-top bg-light p-2 p-sm-0">
-    <nav class="container-xl navbar navbar-expand-lg justify-content-center justify-content-sm-between align-items-center px-sm-3 gap-4 p-0">
-      <div class="navbar-brand d-flex flex-column flex-sm-row align-items-center me-auto text-center text-sm-end gap-sm-2">
+  <header id="mainHeader" class="sticky-top bg-light">
+    <nav class="container-lg navbar navbar-expand-lg justify-content-center justify-content-sm-between align-items-center gap-4 py-1 px-2 px-md-4">
+      <div class="navbar-brand d-flex flex-column flex-sm-row align-items-center me-auto text-center text-sm-end gap-sm-2 p-0">
         <img src="assets/img/logo.svg" alt="Logo" style="width: 70px">
         <h1 class="m-0 h2">Restaurant</h1>
       </div>
       <button class="navbar-toggler btn text-bg-primary px-4 py-2" data-bs-toggle="collapse" data-bs-target="#mainNav">
         Menu
       </button>
-      <div id="mainNav" class="navbar-nav justify-content-lg-end collapse navbar-collapse">
-        <button class="dropdown nav-item btn text-center p-0">
-          <a class="dropdown-toggle btn btn-lg text-uppercase fw-bolder border-0" data-bs-toggle="dropdown">About us</a>
+      <nav id="mainNav" class="navbar-nav justify-content-lg-end collapse navbar-collapse">
+        <nav class="dropdown nav-item btn text-center p-0">
+          <a href="#about" class="dropdown-toggle btn text-uppercase border-0" data-bs-toggle="dropdown">About us</a>
           <nav class="iyo-dropdown-menu dropdown-menu row bg-primary justify-content-center p-0">
-            <a class="btn btn-md text-uppercase fw-bolder fs-5 px-2 rounded-0 rounded-top">Our Story</a>
-            <a class="btn btn-md text-uppercase fw-bolder fs-5 px-2 rounded-0">Our Chefs</a>
-            <a href="#faqs" class="btn btn-md text-uppercase fw-bolder fs-5 px-2 rounded-0">FAQs</a>
+            <a href="#story" class="btn btn-md text-uppercase px-2 rounded-0 rounded-top">Our Story</a>
+            <a href="#chefs" class="btn btn-md text-uppercase px-2 rounded-0">Our Chefs</a>
+            <a href="#faqs" class="btn btn-md text-uppercase px-2 rounded-0 rounded-bottom">FAQs</a>
           </nav>
-        </button>
-        <a class="nav-item btn btn-lg text-uppercase fw-bolder" href="#services">Our Services</a>
-        <a class="nav-item btn btn-lg text-uppercase fw-bolder" href="#menu">Our Menu</a>
-        <a class="nav-item btn btn-lg text-uppercase fw-bolder" href="#contact">Contact Us</a>
-        <button class="btn btn-primary px-xl-5 fs-5 fw-bold text-uppercase ms-2 my-4">Book Table</button>
-      </div>
+        </nav>
+        <a class="nav-item btn text-uppercase" href="#services">Our Services</a>
+        <a class="nav-item btn text-uppercase" href="#menu">Our Menu</a>
+        <a class="nav-item btn text-uppercase" href="#contact">Contact Us</a>
+        <button class="btn btn-primary px-xl-5 fw-bold text-uppercase ms-2">Book Table</button>
+      </nav>
     </nav>
   </header>
   <main class="">
@@ -68,8 +68,8 @@
         <span class="carousel-control-next-icon"></span>
       </button>
     </section>
-    <section class="py-5">
-      <article class="text-center fs-5">
+    <section id="story" class="py-5">
+      <article class="text-center fs-5 my-5">
         <div class="text-center d-flex flex-column gap-3">
           <h2 class="fs-5 fw-bold text-uppercase px-3 m-auto border-bottom border-3 border-primary">About Us</h2>
           <p class="h2 m-0 text-capitalize">Indulge in Traditional Flavors with a Modern Twist.</p>

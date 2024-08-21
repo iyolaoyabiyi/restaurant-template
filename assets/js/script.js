@@ -11,7 +11,19 @@ let menu = {};
 let faqs = {};
 const imgDir = './assets/img/';
 
+function addScrollSpy() {
+  const navs = document.querySelectorAll('#mainNav > nav > nav > a');
+  const dropnav = document.querySelector('#mainNav [data-bs-toggle="dropdown"]');
 
+  for(const nav of navs) {
+    if(nav.classList.contains('active')) {
+      return dropnav.classList.add('active');
+    } else {
+      dropnav.classList.remove('active');
+    }
+  }
+}
+window.addEventListener('scroll', addScrollSpy)
 async function fetchContent() {
   const result = await fetch('./assets/libs/content.json');
   const data = await result.json();
