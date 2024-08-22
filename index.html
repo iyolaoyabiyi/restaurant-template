@@ -5,19 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Naija Restaurant Website :: We Sell Food Here</title>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/style.css">
+
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/script.js" defer></script>
 </head>
-<body data-bs-theme="" data-bs-spy="scroll" data-bs-target="#mainNav" tabindex="0" data-bs-smooth-scroll=true>
+<body id="top" data-bs-theme="" data-bs-spy="scroll" data-bs-target="#mainNav" tabindex="0" data-bs-smooth-scroll=true>
   <p class="text-bg-primary text-capitalize text-center py-2 m-0">##, On this street, In this town, in this country.</p>
-  <header id="mainHeader" class="sticky-top bg-light">
+  <header id="mainHeader" class="sticky-top text-bg-light">
     <nav class="container-lg navbar navbar-expand-lg justify-content-center justify-content-sm-between align-items-center gap-4 py-1 px-2 px-md-4">
-      <div class="navbar-brand d-flex flex-column flex-sm-row align-items-center me-auto text-center text-sm-end gap-sm-2 p-0">
+      <a href="#top" class="navbar-brand d-flex flex-column flex-sm-row align-items-center me-auto text-center text-sm-end gap-sm-2 p-0">
         <img src="assets/img/logo.svg" alt="Logo" style="width: 70px">
-        <h1 class="m-0 h2">Naija Restaurant</h1>
-      </div>
+        <h1 class="m-0 h2 text-primary">Naija Restaurant</h1>
+      </a>
       <button class="navbar-toggler btn text-bg-primary px-4 py-2" data-bs-toggle="collapse" data-bs-target="#mainNav">
         Menu
       </button>
@@ -68,17 +70,17 @@
         <span class="carousel-control-next-icon"></span>
       </button>
     </section>
-    <section id="story" class="py-5">
-      <article class="text-center fs-5 my-5">
-        <div class="text-center d-flex flex-column gap-3">
-          <h2 class="fs-5 fw-bold text-uppercase px-3 m-auto border-bottom border-3 border-primary">About Us</h2>
-          <p class="h2 m-0 text-capitalize">Indulge in Traditional Flavors with a Modern Twist.</p>
-        </div>
+    <section id="story" class="py-5 mt-5">
+      <div class="text-center d-flex flex-column gap-3">
+        <h2 class="fs-5 fw-bold text-uppercase px-3 m-auto border-bottom border-3 border-primary">About Us</h2>
+        <p class="h2 m-0 text-capitalize">Indulge in Traditional Flavors with a Modern Twist.</p>
+      </div>
+      <article class="text-center fs-5 mb-5">
         <div class="container my-4">
-          <p>At <span class="d-inline-block text-bg-primary px-3 text-uppercase rounded">Naija Restaurant</span>, we bring the vibrant and diverse flavors of Nigeria right to your plate. Founded in 2022, our journey began with a passion for showcasing the culinary traditions of Nigeria in an environment that blends tradition with modernity. </p>
+          <p>At <span class="d-inline-block text-bg-primary px-2 text-uppercase rounded">Naija Restaurant</span>, we bring the vibrant and diverse flavors of Nigeria right to your plate. Founded in 2022, our journey began with a passion for showcasing the culinary traditions of Nigeria in an environment that blends tradition with modernity. </p>
           <p> From the bustling streets of Lagos to the serene villages of the North, our menu is a celebration of the country's rich cultural heritage.</p>
         </div>
-        <div class="container-fluid row text-md-start text-sm-center align-items-center mt-5 gap-5 p-1 px-sm-4">
+        <div class="row text-md-start text-sm-center align-items-center mt-5 gap-5 p-1 px-sm-4">
           <div class="col-md">
             <h2 class="text-uppercase">we offer a dining experience that feels like home!</h2>   
             <p>Our commitment is to provide authentic Nigerian dishes made from the freshest ingredients, carefully sourced from local markets and farms. Whether you're craving a hearty bowl of jollof rice or the savory taste of suya, we offer a dining experience that feels like home. Come and experience the warmth of Nigerian hospitality and the joy of sharing a meal with loved ones.</p>
@@ -89,7 +91,7 @@
         </div>
       </article>
     </section>
-    <section id="menu"class="text-bg-primary py-5 mt-5 d-flex flex-column">
+    <section id="menu" class="text-bg-primary py-5 mt-5 d-flex flex-column">
       <h2 class="fs-5 fw-bold text-uppercase text-center px-3 mx-auto my-5 border-bottom border-3 border-dark">Our Menu</h2>
       <div class="nav nav-tabs nav-fill justify-content-center text-uppercase px-2">
         <a class="nav-item nav-link active" href="#allMenu" data-bs-toggle="tab">All</a>
@@ -215,13 +217,13 @@
         <div class="col-md-8 m-auto pe-md-5">
           <h2 class="h1 text-uppercase">Chef Ade Dongoyaro</h2>
           <p class="lead text-capitalize">Executive Chef</p>
-          <p>Chef Ajani is a culinary mastermind with a passion for Nigerian cuisine. Born and raised in Lagos, Nigeria, Chef Ade brings a wealth of experience and knowledge to the kitchen. With over 15 years of culinary expertise, she has honed her skills in some of the top restaurants in Nigeria and abroad.</p>
+          <p>Chef Ade is a culinary mastermind with a passion for Nigerian cuisine. Born and raised in Lagos, Nigeria, Chef Ade brings a wealth of experience and knowledge to the kitchen. With over 15 years of culinary expertise, she has honed her skills in some of the top restaurants in Nigeria and abroad.</p>
           <h3 class="mt-4 h4 text">Connect with Chef Ade</h3>
-          <div class="chef-social btn-group bg-light btn-">
+          <div class="chef-social btn-group bg-light flex-column flex-sm-row">
             <a href="https://facebook.com" target="_blank" class="btn btn-fb">Facebook</a>
-            <a href="https://twitter.com" target="_blank" class="btn btn-x">X</a>
+            <a href="https://twitter.com" target="_blank" class="btn btn-x">X (Twitter)</a>
             <a href="https://instagram.com/" target="_blank" class="btn btn-instagram">Instagram</a>
-            <a href="https://tictok.com/" target="_blank" class="btn btn-tiktok">TikTok</a>
+            <a href="https://tiktok.com/" target="_blank" class="btn btn-tiktok">TikTok</a>
           </div>
         </div>
       </div>
@@ -232,6 +234,74 @@
         <div id="faqsContainer" class="container"></div>
       </div>
     </section>
+    <section id="contact" class="d-flex flex-column py-5">
+      <h2 class="fs-5 fw-bold text-uppercase px-3 mx-auto my-5 border-bottom border-3 border-primary">Contact Us</h2>
+      <article class="container my-5">
+        <div class="row align-items-center">
+          <div class="col-md">
+            <div class="p-2 pe-md-5">
+              <h3 class="my-2">Get In Touch</h3>
+              <p class="mb-4">At <span class="d-inline-block text-bg-primary px-2 text-uppercase rounded">Naija Restaurant</span>, we value your feedback and would love to hear from you! Whether you have a question about our menu, would like to make a reservation, or simply want to share your dining experience with us, please don't hesitate to reach out. </p>
+              <a href="tel:+234 814 608 8889" class="d-flex gap-3 align-items-baseline text-decoration-none mb-2">
+                <i class="bi-telephone-fill text-primary fs-4"></i>
+                <p class="fs-5 text-dark m-0">+234 814 608 8889</p>
+              </a>
+              <a href="mailto:email@naijarestaurant.tld" class="d-flex gap-3 align-items-baseline text-decoration-none mb-3">
+                <i class="bi-envelope-at-fill text-primary fs-4"></i>
+                <p class="fs-5 text-dark m-0">email@naijarestaurant.tld</p>
+              </a>
+              <div class="btn-group">
+                <a class="btn btn-fb" aria-label="Go to facebook"><i class="bi-facebook"></i></a>
+                <a class="btn btn-x" aria-label="Go to X aka Twitter"><i class="bi-twitter"></i></a>
+                <a class="btn btn-instagram" aria-label="Go to instagram"><i class="bi-instagram"></i></a>
+                <a class="btn btn-tiktok" aria-label="Go to tiktok"><i class="bi-tiktok"></i></a>
+              </div>
+            </div>
+          </div>
+          <div id="map" class="col-md">
+            <div class="p-2">
+              <div class="d-flex gap-3 text-capitalize align-items-baseline">
+                <i class="bi-pin-map-fill text-primary fs-4"></i>
+                <p class="fs-5">##, On this street, In this town, in this country.</p>
+              </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.62283124574!2d3.28395955!3d6.548055099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1724237764396!5m2!1sen!2sng" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="mt-5">
+          <h3 class="text-center text-uppercase mb-5">Send us a message</h3>
+          <form id="contactForm" action="" class="d-flex flex-column justify-content-center mx-auto">
+            <div class="d-flex flex-column flex-sm-row gap-3 mb-3">
+              <div class="form-floating w-100">
+                <input id="firstName" type="text" name="first-name" placeholder="First Name" class="form-control" required>
+                <label for="firstName">First Name</label>
+              </div>
+              <div class="form-floating w-100">
+                <input id="lastName" type="text" name="last-name" placeholder="Last Name" class="form-control" required>
+                <label for="lastName">Last Name</label>
+              </div>
+            </div>
+            <div class="form-floating w-100 mb-3">
+              <input id="email" type="email" name="email" placeholder="Email Address" class="form-control" required>
+              <label for="email">Email Address</label>
+            </div>
+            <div class="form-floating w-100 mb-3">
+              <input id="phoneNumber" type="tel" name="phone-number" placeholder="Telephone Number" class="form-control">
+              <label for="phoneNumber">Phone Number</label>
+            </div>
+            <div class="form-floating w-100 mb-4">
+              <textarea id="message" name="message" placeholder="Your Message" class="form-control" required></textarea>
+              <label for="message">Message</label>
+            </div>
+            <button class="btn btn-primary text-uppercase">Send Message</button>
+          </form>
+        </div>
+      </article>
+    </section>
   </main>
+  <footer class="text-bg-light text-center">
+    <p class="container lead p-3">&copy;<script>document.write(new Date().getFullYear())</script> <span class="d-inline-block text-bg-primary px-2 text-uppercase rounded">Naija Restaurant</span>. All rights reserved</p>
+    <p class="text-bg-dark m-0 p-1">Built by <a href="https://iyoandyeni.com" class="text-light">Iyola Oyabiyi</a></p>
+  </footer>
 </body>
 </html>
