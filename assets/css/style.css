@@ -142,8 +142,11 @@ a {
 #contactForm {
   max-width: 700px;
 }
-#message {
-  height: 100px;
+textarea {
+  height: 100px !important;
+}
+#orderModal .modal-body img {
+  max-width: 200px;
 }
 @media screen and (max-width: 576px) {
   .carousel-inner.rounded {

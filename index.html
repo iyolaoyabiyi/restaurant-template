@@ -15,7 +15,7 @@
 <body id="top" data-bs-theme="" data-bs-spy="scroll" data-bs-target="#mainNav" tabindex="0" data-bs-smooth-scroll=true>
   <p class="text-bg-primary text-capitalize text-center py-2 m-0">##, On this street, In this town, in this country.</p>
   <header id="mainHeader" class="sticky-top text-bg-light">
-    <nav class="container-lg navbar navbar-expand-lg justify-content-center justify-content-sm-between align-items-center gap-4 py-1 px-2 px-md-4">
+    <nav class="container-lg navbar navbar-expand-lg justify-content-center justify-content-sm-between align-items-center gap-4 py-1 px-2 px-md-4 px-lg-2">
       <a href="#top" class="navbar-brand d-flex flex-column flex-sm-row align-items-center me-auto text-center text-sm-end gap-sm-2 p-0">
         <img src="assets/img/logo.svg" alt="Logo" style="width: 70px">
         <h1 class="m-0 h2 text-primary">Naija Restaurant</h1>
@@ -35,7 +35,7 @@
         <a class="nav-item btn text-uppercase" href="#services">Our Services</a>
         <a class="nav-item btn text-uppercase" href="#menu">Our Menu</a>
         <a class="nav-item btn text-uppercase" href="#contact">Contact Us</a>
-        <button class="btn btn-primary px-xl-5 fw-bold text-uppercase ms-2">Book Table</button>
+        <button class="btn btn-primary px-xl-3 fw-bold text-uppercase ms-2" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Reservation</button>
       </nav>
     </nav>
   </header>
@@ -48,17 +48,17 @@
         <div class="carousel-item active">
           <h2 class="display-1">Welcome to our restaurant</h2>
           <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, tempora?</p>
-          <a href="" class="btn btn-primary btn-lg mt-4 text-uppercase">Check Out Our Menu</a>
+          <a href="#menu" class="btn btn-primary btn-lg mt-4 text-uppercase">Check Out Our Menu</a>
         </div>
         <div class="carousel-item">
           <h2 class="display-1">We serve the best dishes</h2>
           <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, tempora?</p>
-          <a href="" class="btn btn-primary btn-lg mt-4 text-uppercase">Reserve a Table</a>
+          <button class="btn btn-primary btn-lg mt-4 text-uppercase" data-bs-toggle="modal" data-bs-target="#bookingModal">Book a Reservation</button>
         </div>
         <div class="carousel-item">
           <h2 class="display-1">Delicacies On Your doorstep</h2>
           <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, tempora?</p>
-          <a href="" class="btn btn-primary btn-lg mt-4 text-uppercase">Order Online</a>
+          <a href="#menu" class="btn btn-primary btn-lg mt-4 text-uppercase">Order Online</a>
         </div>
       </div>
       <div class="carousel-indicators iyo-carousel-indicators m-0 px-4 py-2 rounded-bottom">
@@ -303,5 +303,107 @@
     <p class="container lead p-3">&copy;<script>document.write(new Date().getFullYear())</script> <span class="d-inline-block text-bg-primary px-2 text-uppercase rounded">Naija Restaurant</span>. All rights reserved</p>
     <p class="text-bg-dark m-0 p-1">Built by <a href="https://iyoandyeni.com" class="text-light">Iyola Oyabiyi</a></p>
   </footer>
+  <!-- Modals -->
+   <!-- Booking Modal -->
+    <section id="bookingModal" class="modal fade p-0 p-sm-2">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Booking Form</h2>
+            <button class="btn btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <form id="bookingForm" action="" class="d-flex flex-column justify-content-center mx-auto">
+              <div class="d-flex flex-column flex-lg-row gap-3 mb-3">
+                <div class="form-floating w-100">
+                  <input id="bookFirstName" type="text" name="book-first-name" placeholder="First Name" class="form-control" required>
+                  <label for="bookFirstName">First Name</label>
+                </div>
+                <div class="form-floating w-100">
+                  <input id="bookLastName" type="text" name="book-last-name" placeholder="Last Name" class="form-control" required>
+                  <label for="bookLastName">Last Name</label>
+                </div>
+              </div>
+              <div class="form-floating w-100 mb-3">
+                <input id="bookEmail" type="email" name="book-email" placeholder="Email Address" class="form-control" required>
+                <label for="bookEmail">Email Address</label>
+              </div>
+              <div class="form-floating w-100 mb-3">
+                <input id="bookPhoneNumber" type="tel" name="book-phone-number" placeholder="Telephone Number" class="form-control">
+                <label for="bookPhoneNumber">Phone Number</label>
+              </div>
+              <div class="d-flex flex-column flex-lg-row gap-3 mb-3">
+                <div class="form-floating w-100">
+                  <input id="bookPeopleAmt" type="number" name="people-amount" placeholder="Number of people" class="form-control" min="1" max="12" required>
+                  <label for="bookPeopleAmt">Number of people</label>
+                </div>
+                <div class="form-floating w-100">
+                  <input id="bookDate" type="date" name="date" placeholder="Date" class="form-control" required>
+                  <label for="bookDate">Date</label>
+                </div>
+                <div class="form-floating w-100">
+                  <input id="bookTime" type="time" name="time" placeholder="Time" min="09:00" max="22:00" class="form-control" required>
+                  <label for="bookTime">Time</label>
+                </div>
+              </div>
+              <div class="form-floating w-100 mb-4">
+                <textarea id="bookMessage" name="book-message" placeholder="Your message or special request" class="form-control" required></textarea>
+                <label for="bookMessage">Message/Special Request</label>
+              </div>
+              <button class="btn btn-primary text-uppercase">Send Message</button>
+            </form>
+          </div>
+          <dive class="modal-footer"></dive>
+        </div>
+      </div>
+    </section>
+    <!-- Order Modal -->
+    <section id="orderModal" class="modal fade">
+      <div class="modal-dialog modal-static">
+        <form class="modal-content">
+          <div class="modal-header">
+            <button class="btn btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div action="" class="modal-body">
+            <div class="row g-3 align-items-center justify-content-center justify-content-sm-start">
+              <img id="orderImg" src="./assets/img/fried-rice.jpg" alt="" class="img-fluid img-thumbnail col-auto">
+              <h2 class="modal-title col-auto"><span id="orderName">Order Name</span>
+              </h2>
+            </div>
+            <p class="lead mt-3 text-center text-sm-start">Price: &#8358;<span id="orderPrice" class="fw-bold">1000</span>/Plate </p>
+            <div class="mb-2">
+              <label for="orderQuantity">Quantity:</label>
+              <div class="input-group ">
+                <input type="number" name="order-quantity" id="orderQuantity" class="form-control" value="1" min="1">
+                <span class="input-group-text">Plates</span>
+              </div>
+            </div>
+            <div class="mb-2">
+              <label for="preferredSoup">Preferred Soup:</label>
+              <select name="preferred-soup" id="preferredSoup" class="form-select">
+                <option value="peppered">Peppered Soup</option>
+                <option value="egusi">Egusi Soup</option>
+                <option value="efo">Vegetable Soup</option>
+                <option value="ogbono">Ogbono Soup</option>
+              </select>
+            </div>
+            <div class="mb-2">
+              <label for="preferredSides">Preferred Sides:</label>
+              <select name="preferred-sides" id="preferredSides" class="form-select" multiple>
+                <option value="meat">Fried Beef - <span>&#8358;1500</span></option>
+                <option value="fish">Fried Fish - <span>&#8358;1500</span></option>
+                <option value="ponmo">Ponmo - <span>&#8358;1500</span></option>
+                <option value="turkey">Turkey - <span>&#8358;1500</span></option>
+                <option value="chicken">Fried Chicken - <span>&#8358;1500</span></option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Add More</button>
+            <button type="submit" class="btn btn-primary">Place Order</button>
+          </div>
+        </form>
+      </div>
+    </section>
 </body>
 </html>

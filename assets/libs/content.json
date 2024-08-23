@@ -15,6 +15,20 @@
       "image": "fried-rice.jpg"
     },
     {
+      "name": "Akara",
+      "price": 1000,
+      "category": "Breakfast",
+      "description": "Fried bean cakes, often served with pap or garri",
+      "image": "akara.jpg"
+    },
+    {
+      "name": "Ghana Jollof Rice",
+      "price": 1000,
+      "category": "Continental",
+      "description": "Ghana-inspired jollof rice dish with vegetables and spices",
+      "image": "ghana-jollof-rice.jpg"
+    },
+    {
       "name": "Coconut Rice",
       "price": 1800,
       "category": "Continental",
@@ -69,13 +83,6 @@
       "category": "Soups",
       "description": "Delicious soup made with okra and vegetables",
       "image": "okra-soup.jpg"
-    },
-    {
-      "name": "Akara",
-      "price": 1000,
-      "category": "Breakfast",
-      "description": "Fried bean cakes, often served with pap or garri",
-      "image": "akara.jpg"
     },
     {
       "name": "Moimoi",
