@@ -148,12 +148,26 @@ textarea {
 #orderModal .modal-body img {
   max-width: 200px;
 }
+@media (min-width: 992px) {
+  .services-img-container img, .services-container {
+    border-radius: 0 !important;
+  }
+}
 @media screen and (max-width: 576px) {
   .carousel-inner.rounded {
     border-radius: 0 !important;
   }
+  #chef .btn-group .btn {
+    border-radius: 0;
+  }
+  #chef .btn-group .btn:first-child {
+    border-radius: var(--bs-border-radius) var(--bs-border-radius) 0 0;
+  }
+  #chef .btn-group .btn:last-child {
+    border-radius: 0 0 var(--bs-border-radius) var(--bs-border-radius);
+  }
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .navbar-brand  {
     margin: 0 !important;
   }

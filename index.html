@@ -12,15 +12,15 @@
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/script.js" defer></script>
 </head>
-<body id="top" data-bs-theme="" data-bs-spy="scroll" data-bs-target="#mainNav" tabindex="0" data-bs-smooth-scroll=true>
+<body id="top" class="container-fluid" data-bs-theme="" data-bs-spy="scroll" data-bs-target="#mainNav" tabindex="0" data-bs-smooth-scroll=true>
   <p class="text-bg-primary text-capitalize text-center py-2 m-0">##, On this street, In this town, in this country.</p>
-  <header id="mainHeader" class="sticky-top text-bg-light">
+  <header id="mainHeader" class="sticky-top text-bg-light p-2 p-md-0">
     <nav class="container-lg navbar navbar-expand-lg justify-content-center justify-content-sm-between align-items-center gap-4 py-1 px-2 px-md-4 px-lg-2">
       <a href="#top" class="navbar-brand d-flex flex-column flex-sm-row align-items-center me-auto text-center text-sm-end gap-sm-2 p-0">
-        <img src="assets/img/logo.svg" alt="Logo" style="width: 70px">
+        <img src="assets/img/logo.svg" alt="Header Logo" style="width: 70px">
         <h1 class="m-0 h2 text-primary">Naija Restaurant</h1>
       </a>
-      <button class="navbar-toggler btn text-bg-primary px-4 py-2" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <button class="navbar-toggler btn text-bg-primary text-uppercase px-4 py-2" data-bs-toggle="collapse" data-bs-target="#mainNav">
         Menu
       </button>
       <nav id="mainNav" class="navbar-nav justify-content-lg-end collapse navbar-collapse">
@@ -35,13 +35,13 @@
         <a class="nav-item btn text-uppercase" href="#services">Our Services</a>
         <a class="nav-item btn text-uppercase" href="#menu">Our Menu</a>
         <a class="nav-item btn text-uppercase" href="#contact">Contact Us</a>
-        <button class="btn btn-primary px-xl-3 fw-bold text-uppercase ms-2" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Reservation</button>
+        <button class="btn btn-primary px-xl-3 fw-bold text-uppercase ms-lg-2 my-3" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Reservation</button>
       </nav>
     </nav>
   </header>
   <main class="">
     <section id="hero" class="carousel slide carousel-dark d-flex flex-column align-items-center py-5" data-bs-ride="carousel">
-      <button class="carousel-control-prev justify-content-start ps-sm-5" data-bs-target="#hero" data-bs-slide="prev">
+      <button class="carousel-control-prev justify-content-start ps-md-4" data-bs-target="#hero" data-bs-slide="prev">
         <span class="carousel-control-prev-icon"></span>
       </button>
       <div class="carousel-inner container text-center py-5 px-3 rounded">
@@ -66,13 +66,14 @@
         <button class="btn" data-bs-target="#hero" data-bs-slide-to="1"></button>
         <button class="btn" data-bs-target="#hero" data-bs-slide-to="2"></button>
       </div>
-      <button class="carousel-control-next justify-content-end pe-sm-5" data-bs-target="#hero" data-bs-slide="next">
+      <button class="carousel-control-next justify-content-end pe-md-4" data-bs-target="#hero" data-bs-slide="next">
         <span class="carousel-control-next-icon"></span>
       </button>
     </section>
-    <section id="story" class="py-5 mt-5">
+    <!-- Story -->
+    <section id="story" class="py-5">
       <div class="text-center d-flex flex-column gap-3">
-        <h2 class="fs-5 fw-bold text-uppercase px-3 m-auto border-bottom border-3 border-primary">About Us</h2>
+        <h2 class="fs-5 fw-bold text-uppercase px-3 m-auto border-bottom border-3 border-primary my-5">About Us</h2>
         <p class="h2 m-0 text-capitalize">Indulge in Traditional Flavors with a Modern Twist.</p>
       </div>
       <article class="text-center fs-5 mb-5">
@@ -91,6 +92,7 @@
         </div>
       </article>
     </section>
+    <!-- Menu -->
     <section id="menu" class="text-bg-primary py-5 mt-5 d-flex flex-column">
       <h2 class="fs-5 fw-bold text-uppercase text-center px-3 mx-auto my-5 border-bottom border-3 border-dark">Our Menu</h2>
       <div class="nav nav-tabs nav-fill justify-content-center text-uppercase px-2">
@@ -139,13 +141,14 @@
         </div>
       </div>
     </section>
+    <!-- Services -->
     <section id="services" class="container-fluid d-flex flex-column align-items-center py-5">
       <h2 class="fs-5 fw-bold text-uppercase px-3 m-auto border-bottom border-3 border-primary my-5">Our Services</h2>
-      <div class="row flex-column-reverse flex-md-row py-5">
-        <div class="col-md-6 col-xl-4 d-flex align-items-center p-0 pe-md-3 pt-3 pt-md-0">
-          <img src="./assets/img/services.jpg" alt="" class="img-fluid">
+      <div class="row flex-column-reverse flex-lg-row py-5">
+        <div class="services-img-container col-lg-6 col-xl-4 d-flex align-items-center p-0 pe-lg-3">
+          <img src="./assets/img/services.jpg" alt="" class="img-fluid d-block rounded-bottom">
         </div>
-        <div class="services-container col-md-6 col-xl-8 p-0 ps-md-3 d-flex align-items-center justify-content-center">
+        <div class="services-container col-lg-6 col-xl-8 p-0 ps-md-3 d-flex align-items-center justify-content-center rounded-top">
           <div class="row container-fluid p-0 p-sm-3">
             <div class="service col-lg-12  col-xl-6 p-2">
               <div class="d-flex align-items-center gap-4 text-bg-light p-3">
@@ -204,7 +207,7 @@
           </div>
         </div>
       </div>
-      <button class="btn btn-primary btn-lg text-uppercase">Contact Us</button>
+      <a href="#contact" class="btn btn-primary btn-lg text-uppercase">Contact Us</a>
     </section>
     <section id="chef" class="container-fluid px-1 px-sm-2 p-5">
       <div class="container row flex-md-row-reverse text-bg-light p-2 pb-5 p-md-5 mx-auto rounded">
@@ -362,7 +365,7 @@
       <div class="modal-dialog modal-static">
         <form class="modal-content">
           <div class="modal-header">
-            <button class="btn btn-close" data-bs-dismiss="modal"></button>
+            <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div action="" class="modal-body">
             <div class="row g-3 align-items-center justify-content-center justify-content-sm-start">
